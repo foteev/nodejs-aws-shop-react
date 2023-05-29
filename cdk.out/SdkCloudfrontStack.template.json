@@ -166,7 +166,7 @@
    "Properties": {
     "Content": {
      "S3Bucket": {
-      "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-eu-west-1"
+      "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-eu-central-1"
      },
      "S3Key": "44a0e383be3d862079d4e38f75b61b56e911d6b940ae08bf1553c13c3b692a87.zip"
     },
@@ -190,7 +190,7 @@
     },
     "SourceBucketNames": [
      {
-      "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-eu-west-1"
+      "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-eu-central-1"
      }
     ],
     "SourceObjectKeys": [
@@ -270,7 +270,7 @@
            },
            ":s3:::",
            {
-            "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-eu-west-1"
+            "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-eu-central-1"
            }
           ]
          ]
@@ -285,7 +285,7 @@
            },
            ":s3:::",
            {
-            "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-eu-west-1"
+            "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-eu-central-1"
            },
            "/*"
           ]
@@ -357,7 +357,7 @@
    "Properties": {
     "Code": {
      "S3Bucket": {
-      "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-eu-west-1"
+      "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-eu-central-1"
      },
      "S3Key": "9eb41a5505d37607ac419321497a4f8c21cf0ee1f9b4a6b29aa04301aea5c7fd.zip"
     },

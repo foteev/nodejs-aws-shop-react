@@ -8,7 +8,7 @@ var origins = require("aws-cdk-lib/aws-cloudfront-origins");
 var app = new cdk.App();
 var stack = new cdk.Stack(app, "SdkCloudfrontStack", {
     env: {
-        region: "eu-west-1"
+        region: "eu-central-1"
     }
 });
 var bucket = new s3.Bucket(stack, "WebAppBucket", {
