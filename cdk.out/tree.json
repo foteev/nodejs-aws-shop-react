@@ -18,7 +18,7 @@
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
                   "aws:cdk:cloudformation:props": {
-                    "bucketName": "developer-course-cf-bucket-makfill",
+                    "bucketName": "developer-course-cf-bucket",
                     "tags": [
                       {
                         "key": "aws-cdk:cr-owned:afbf1c4d",

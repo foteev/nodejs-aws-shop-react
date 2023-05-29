@@ -12,7 +12,7 @@ var stack = new cdk.Stack(app, "SdkCloudfrontStack", {
     }
 });
 var bucket = new s3.Bucket(stack, "WebAppBucket", {
-    bucketName: "developer-course-cf-bucket-makfill"
+    bucketName: "developer-course-cf-bucket"
 });
 var originAccessIdentity = new cf.OriginAccessIdentity(stack, "WebAppBucketOAI", {
     comment: bucket.bucketName

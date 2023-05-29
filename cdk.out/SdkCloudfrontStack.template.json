@@ -3,7 +3,7 @@
   "WebAppBucket8F6FA179": {
    "Type": "AWS::S3::Bucket",
    "Properties": {
-    "BucketName": "developer-course-cf-bucket-makfill",
+    "BucketName": "developer-course-cf-bucket",
     "Tags": [
      {
       "Key": "aws-cdk:cr-owned:afbf1c4d",
