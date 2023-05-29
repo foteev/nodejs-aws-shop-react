@@ -1,4 +1,7 @@
 # React-shop-cloudfront
+ONLY TASK 2.1 HAS BEEN DONE :(
+AWS S3 deploy: [http://foteev-bucket.s3-website.eu-central-1.amazonaws.com/]
+AWS CloudFront deploy: [https://d2uiz095ses8uj.cloudfront.net/]
 
 This is frontend starter project for nodejs-aws mentoring program. It uses the following technologies:
 

@@ -1,0 +1,124 @@
+{
+  "version": "32.0.0",
+  "artifacts": {
+    "SdkCloudfrontStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "SdkCloudfrontStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "SdkCloudfrontStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/eu-west-1",
+      "properties": {
+        "templateFile": "SdkCloudfrontStack.template.json",
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-eu-west-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-eu-west-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-eu-west-1/82a1b2b1727ecdb18d47d0acb85c6b3eed7faa5ba19e9a9e74972004cc011fb7.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "SdkCloudfrontStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-eu-west-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "SdkCloudfrontStack.assets"
+      ],
+      "metadata": {
+        "/SdkCloudfrontStack/WebAppBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebAppBucket8F6FA179"
+          }
+        ],
+        "/SdkCloudfrontStack/WebAppBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebAppBucketPolicy542A2969"
+          }
+        ],
+        "/SdkCloudfrontStack/WebAppBucketOAI/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebAppBucketOAIF5A7E11B"
+          }
+        ],
+        "/SdkCloudfrontStack/WebAppDistribution/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebAppDistribution4473AB7E"
+          }
+        ],
+        "/SdkCloudfrontStack/DeployWebApp/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeployWebAppAwsCliLayerFD5296FF"
+          }
+        ],
+        "/SdkCloudfrontStack/DeployWebApp/CustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeployWebAppCustomResource2878D89A"
+          }
+        ],
+        "/SdkCloudfrontStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265"
+          }
+        ],
+        "/SdkCloudfrontStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF"
+          }
+        ],
+        "/SdkCloudfrontStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536"
+          }
+        ],
+        "/SdkCloudfrontStack/Domain URL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DomainURL"
+          }
+        ],
+        "/SdkCloudfrontStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/SdkCloudfrontStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/SdkCloudfrontStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "SdkCloudfrontStack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
